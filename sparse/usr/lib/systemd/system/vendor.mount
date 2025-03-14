@@ -5,8 +5,8 @@ Before=local-fs.target systemd-modules-load.service
 [Mount]
 What=/dev/mapper/dynpart-vendor_a
 Where=/vendor
-Type=ext4
-Options=ro,barrier=1,discard
+Type=erofs
+Options=ro
 # Options had SELinux context option:  
 
 # Default is 90 which makes mount period too long in case of
@@ -15,6 +15,3 @@ TimeoutSec=10
 
 [Install]
 WantedBy=local-fs.target
-
-# From ./out/target/product/FP4/vendor/etc/fstab.default :
-# vendor                                                  /vendor                ext4    ro,barrier=1,discard                                 wait,slotselect,avb,logical,first_stage_mount
