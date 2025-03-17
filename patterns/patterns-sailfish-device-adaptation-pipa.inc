@@ -6,6 +6,8 @@ Summary: Jolla HW Adaptation pipa
 Requires: droid-hal-pipa
 Requires: droid-hal-pipa-img-boot
 Requires: droid-hal-pipa-kernel-modules
+Requires: droid-hal-pipa-kernel-dtbo
+Requires: droid-hal-pipa-vendor_boot
 Requires: droid-config-pipa-sailfish
 Requires: droid-config-pipa-pulseaudio-settings
 Requires: droid-config-pipa-policy-settings
@@ -32,10 +34,6 @@ Requires: dummy_netd
 # Sensors
 Requires: hybris-libsensorfw-qt5
 
-# Vibra
-Requires: ngfd-plugin-native-vibrator
-Requires: libngf-qt5-qtfeedback
-
 # Needed for /dev/touchscreen symlink
 Requires: qt5-plugin-generic-evdev
 
@@ -59,9 +57,6 @@ Requires: qtscenegraph-adaptation
 Requires: gstreamer1.0-droid
 Requires: gmp-droid
 
-# This is needed for notification LEDs
-Requires: mce-plugin-libhybris
-
 # USB mode controller
 Requires: usb-moded
 
@@ -70,16 +65,6 @@ Requires: rfkill
 
 # enable device lock and allow to select untrusted software
 Requires: jolla-devicelock-daemon-encsfa
-
-# Enable home encryption
-#Requires: sailfish-device-encryption
-
-# For GPS
-Requires: geoclue-provider-hybris
-
-# For FM radio on some QCOM devices
-#Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
-#Requires: jolla-mediaplayer-radio
 
 # NFC support
 # 1. binder plugin requires Android 8 or a newer base
