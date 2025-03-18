@@ -6,6 +6,7 @@ Before=connman.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
+ExecStartPre=/usr/bin/sleep 10
 ExecStart=/bin/sh -c "echo ON > /dev/wlan"
 
 [Install]
