@@ -22,7 +22,7 @@ IMG_SIZE=$(du -h $GEN_IMG_BASE.tar | cut -f1)
 # Output filenames
 DST_IMG_BASE=$ID-$DEVICE-$SAILFISH_FLAVOUR-$VERSION_ID@EXTRA_NAME@
 
-fallocate -l 242405584896 userdata.img
+fallocate -l 2G userdata.img
 
 /sbin/mkfs.ext4 userdata.img
 
