@@ -1,3 +1,7 @@
-ip a | grep wlp > /dev/null
+#!/bin/bash
 
-while [ $? -eq 1 ]; do ip a | grep wlp > /dev/null; done
+ip a | grep wlan0 > /dev/null
+
+while [ $? -eq 1 ]; do sleep 1; ip a | grep wlan0 > /dev/null; done
+
+exit 0
