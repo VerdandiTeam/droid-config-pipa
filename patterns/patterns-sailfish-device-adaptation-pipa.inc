@@ -66,13 +66,6 @@ Requires: rfkill
 # enable device lock and allow to select untrusted software
 Requires: jolla-devicelock-daemon-encsfa
 
-# NFC support
-# 1. binder plugin requires Android 8 or a newer base
-# 2. pn54x plugin talks directly to pn54x driver
-# These plugins are mutually exclusive, you need to pick one:
-Requires: nfcd-binder-plugin
-#Requires: nfcd-pn54x-plugin
-
 %description -n patterns-sailfish-device-adaptation-pipa
 Pattern with packages for pipa HW Adaptation
 
