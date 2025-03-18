@@ -6,7 +6,9 @@ Before=connman.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
+TimeoutStartSec=1m
 ExecStart=/bin/sh -c "echo ON > /dev/wlan"
+ExecStartPost=/bin/bash /usr/bin/droid/wait-for-wifi.sh
 
 [Install]
 WantedBy=network.target
