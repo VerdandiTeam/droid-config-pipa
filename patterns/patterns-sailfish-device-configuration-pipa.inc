@@ -26,6 +26,9 @@ Requires: patterns-sailfish-consumer-generic
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
 
+# Audio rotation fix
+Requires: pipa-audio-rotation
+
 # bloat
 Recommends: harbour-storeman
 Recommends: sailfishos-chum-gui
