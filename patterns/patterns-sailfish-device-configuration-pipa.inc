@@ -35,6 +35,9 @@ Recommends: sailfishos-chum-gui
 Recommends: punky
 Recommends: verdandiupdater-sfos
 
+# Battery page
+Requires: verdanditeam-settings-battery
+
 %description -n patterns-sailfish-device-configuration-pipa
 Pattern with packages for pipa configurations
 
